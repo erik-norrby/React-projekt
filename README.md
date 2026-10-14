@@ -1,12 +1,17 @@
-# React + Vite
+Schoolproject using React + Vite. First React project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Saldo is a simple React application for keeping track of income and expenses. Users can add transactions and view a summary of their income, expenses, and current balance.
 
-Currently, two official plugins are available:
+The application also displays expenses divided by category and retrieves current exchange rates from the Frankfurter API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Saldo features the following
 
-## Expanding the ESLint configuration
+- Option to add income and expenses
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Display of total balance, income, and expenses
+
+- Display of expenses divided by category
+
+- Display a list of transactions
+
+- Retrieve exchange rates for EUR and USD
