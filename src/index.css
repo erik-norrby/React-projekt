@@ -1,3 +1,24 @@
+:root {
+    --color-background: #f3f5f7;
+    --color-surface: #ffffff;
+    --color-text: #172133;
+    --color-muted: #6e7683;
+    --color-primary: #17324d;
+    --color-green: #33b489;
+    --color-green-dark: #238568;
+    --color-red: #df5d67;
+    --color-red-dark: #bb2a39;
+    --color-blue: #5380ce;
+    --color-border: #dce2e8;
+    --color-row-border: #e3e7eb;
+    --color-input-border: #bac6d3;
+    --color-bar-background: #e7ebef;
+
+    --radius-small: 5px;
+    --radius-button: 6px;
+    --radius-large: 10px;
+}
+
 /* GLOBALT START */
 * {
     box-sizing: border-box;
@@ -19,6 +40,7 @@ h1 {
     margin: 0;
     font-size: 40px;
 }
+
 
 h2 {
     margin-top: 0;
@@ -94,6 +116,7 @@ button {
     background-color: white;
 }
 
+
 .summary-card p {
     color: #555;
 }
@@ -104,6 +127,7 @@ button {
 }
 
 /* SAMMANFATTNING SLUT */
+
 
 /* DASHBOARD START */
 .dashboard-container {
@@ -223,6 +247,111 @@ button {
   font-weight: bold;
 }
 /* VALUTAKURSER SLUT */
+
+/* FÄRGER OCH FORMREDIGERING START */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    border-bottom: none;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.logo {
+    color: white;
+}
+
+.page-heading p {
+    color: var(--color-green-dark);
+}
+
+.add-button,
+button {
+    border: none;
+    border-radius: var(--radius-button);
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.summary-card,
+.content-card,
+.form-card {
+    border-color: var(--color-border);
+    border-radius: var(--radius-large);
+    background-color: var(--color-surface);
+}
+
+
+.summary-card p,
+.transaction-row p,
+.form-card > p {
+    color: var(--color-muted);
+}
+
+
+
+.income-card {
+    border: 2px solid var(--color-green);
+}
+
+.expense-card {
+    border: 2px solid var(--color-red);
+}
+
+.balance-card {
+    border: 2px solid var(--color-blue);
+}
+
+.currency-box {
+    border: none;
+    border-radius: var(--radius-large);
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.bar-background {
+    overflow: hidden;
+    border-radius: var(--radius-large);
+    background-color: var(--color-bar-background);
+}
+
+.bar-fill {
+    border-radius: var(--radius-large);
+    background-color: var(--color-green);
+}
+
+.transaction-row {
+    border-color: var(--color-row-border);
+}
+
+.income-text {
+    color: var(--color-green-dark);
+}
+
+.expense-text {
+    color: var(--color-red-dark);
+}
+
+.transaction-form input,
+.transaction-form select {
+    border-color: var(--color-input-border);
+    border-radius: var(--radius-small);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+.api-error,
+.form-error {
+    color: var(--color-red-dark);
+}
+/* FÄRGER OCH FORMR REDIGERING SLUT */
 
 /* RESPONSIVT START */
 @media (max-width: 750px) {
