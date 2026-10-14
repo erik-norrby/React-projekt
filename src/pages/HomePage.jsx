@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import SummaryCards from '../components/SummaryCards.jsx'
 import CategoryList from '../components/CategoryList.jsx'
 import TransactionList from '../components/TransactionList.jsx'
+import CurrencyBox from '../components/CurrencyBox.jsx'
 
 function HomePage({ transactions }) {
     return (
@@ -13,6 +14,7 @@ function HomePage({ transactions }) {
 
             {/* Samma transaktionslista skickas till flera komponenter med props. */}
             <SummaryCards transactions={transactions} />
+            <CurrencyBox />
 
             <div className="dashboard-container">
                 <CategoryList transactions={transactions} />

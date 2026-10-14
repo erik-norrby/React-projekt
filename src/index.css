@@ -108,9 +108,9 @@ button {
 /* DASHBOARD START */
 .dashboard-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 16px;
     margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* DASHBOARD SLUT */
@@ -146,15 +146,15 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
     padding: 14px 0;
     border-bottom: 1px solid #ccc;
+    gap: 15px;
 }
 
 .transaction-row p {
+    font-size: 13px;
     margin: 5px 0 0;
     color: #555;
-    font-size: 13px;
 }
 
 .income-text,
@@ -187,9 +187,9 @@ button {
 
 .transaction-form input,
 .transaction-form select {
+    font-size: 16px;
     padding: 11px;
     border: 1px solid gray;
-    font-size: 16px;
 }
 
 .transaction-form button {
@@ -202,6 +202,28 @@ button {
 
 /* FORMULÄR SLUT */
 
+
+/* VALUTAKURSER START */
+.currency-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+  padding: 20px 24px;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+.currency-box h2,
+.currency-box p {
+  margin: 4px 0;
+}
+
+.api-error {
+  font-weight: bold;
+}
+/* VALUTAKURSER SLUT */
+
 /* RESPONSIVT START */
 @media (max-width: 750px) {
 
@@ -210,7 +232,7 @@ button {
         grid-template-columns: 1fr;
     }
 
-    .page-heading {
+    .currency-box,.page-heading {
         align-items: start;
         flex-direction: column;
         gap: 15px;
